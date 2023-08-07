@@ -1,36 +1,235 @@
-<style>
-        body {font-family: Arial, Helvetica, sans-serif;}
-        
-        .navbar {
-          width: 100%;
-          background-color: #000000;
-          overflow: auto;
-        }
-        
-        .navbar a {
-          float: left;
-          padding: 12px;
-          color: rgb(236, 10, 10);
-          text-decoration: none;
-          font-size: 17px;
-        }
-        
-        .navbar a:hover {
-          background-color: #000;
-        }
-        
-        .active {
-          background-color: #807d7d;
-        }
-        
-        @media screen and (max-width: 500px) {
-          .navbar a {
-            float: none;
-            display: block;
-          }
-        }
-        </style>
-        
-        
-  
-      
+.navbar {
+  width: 100%;
+  background-color: #000000;
+  overflow: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  /* Push to the right */
+
+}
+
+.navbar a {
+  padding: 12px;
+  color: rgb(236, 10, 10);
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: rgb(236, 10, 10);
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #807d7d;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url('https://cdn.wallpapersafari.com/16/16/UwWslj.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+
+.product {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  width: 200px;
+}
+
+
+.product img {
+  max-width: 100%;
+}
+
+
+.product h3 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+
+.product p {
+  font-size: 1.1rem;
+}
+
+
+.product button {
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.product button:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+.size {
+  display: inline-block;
+  margin-right: 5px;
+  padding: 2px 5px;
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 0.9rem;
+}
+
+.contact {
+  max-width: 600px;
+  margin: 20px auto 0;
+  /* Add margin only to the top of the form */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #f7f7f7;
+  /* Add your preferred background color here */
+}
+
+.contact form {
+  display: grid;
+  gap: 10px;
+  margin-top: 0;
+  /* Add margin to the top of the form */
+}
+
+.contact label {
+  font-weight: bold;
+}
+
+.contact input[type="text"],
+.contact select,
+.contact textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.contact input[type="text"] {
+  width: 30%;
+
+}
+
+.contact input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.contact input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Optional: Style the select dropdown */
+.contact select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url('down-arrow.png') no-repeat right center;
+  background-size: 20px;
+}
+
+/* Optional: Add some spacing for better readability */
+.contact label,
+.contact input,
+.contact select,
+.contact textarea {
+  margin-bottom: 10px;
+}
+
+/* Style for the search container */
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-container input[type="text"] {
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+
+.search-container a {
+  color: rgb(236, 10, 10);
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.zoom-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.zoomed-image {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.close-zoom {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}

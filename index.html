@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--  HEADER   -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--  LINK  main CSS   -->
+  <link rel="stylesheet" href="padjostore.css">
+  <!--  LINK  icons CSS   -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--  LINK jquery library   -->
+  <script src="jquery.min.js"></script>
+</head>
+<!--  HEADER END  -->
+<!--  BODY  -->
+
+<body>
+
+
+  <!--  NAVBAR   -->
+  <div class="navbar">
+    <!--  LEFT CONTAINER   -->
+    <div class="navbar-left">
+      <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+      <a href="contact.html" class=""><i class="fa fa-fw fa-envelope"></i> Contact</a>
+    </div>
+    <!--  LEFT CONTAINER END  -->
+    <!--  RIGHT CONTAINER   -->
+    <div class="navbar-right">
+      <div class="search-container">
+        <input type="text" id="searchInput" name="search" placeholder="Search..">
+        <a href="#" id="searchButton"><i class="fa fa-fw fa-search"></i></a>
+      </div>
+    </div>
+    <!--RIGHT CONTAINER END  -->
+
+  </div>
+  </div>
+  <!--  NAVBAR END   -->
+  <div id="product-container" class="product-list">
+
+  </div>
+  <div class="zoom-container" style="display: none;">
+    <span class="close-zoom">&times;</span>
+    <img class="zoomed-image" src="" alt="">
+  </div>
+  <!-- LINK JS  -->
+  <script src="index.js"></script>
+
+</body>
+<!--  BODY END -->
+
+</html>
