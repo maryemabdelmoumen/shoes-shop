@@ -1,0 +1,11 @@
+function jersey(jersey1,jersey2,jersey3) {
+    var jer = {};
+    jersey.jersey1 = jersey1;
+    jersey.jersey2 = jersey2;
+    jersey.jersey3 = jersey3;
+    return jer;
+    }
+    function (){
+        
+    }
+
