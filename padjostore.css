@@ -20,21 +20,13 @@
 
 }
 
-.navbar a {
-  padding: 12px;
-  color: rgb(236, 10, 10);
-  text-decoration: none;
-  font-size: 17px;
-}
-
-
 
 .navbar a {
   float: left;
   padding: 12px;
   color: rgb(236, 10, 10);
   text-decoration: none;
-  font-size: 17px;
+  font-size: 15px;
 }
 
 .navbar a:hover {
@@ -44,12 +36,23 @@
 .active {
   background-color: #807d7d;
 }
+.home{
+  border-left: 3px solid white;
 
-@media screen and (max-width: 500px) {
+}
+.padgo{
+  color:white !important;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 25px;
+}
+@media screen and (max-width: 600px) {
   .navbar a {
     float: none;
     display: block;
   }
+  #searchInput{
+    width: 100px;
+  } 
 }
 
 body {
