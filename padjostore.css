@@ -5,6 +5,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-radius: 50px;
 }
 
 .navbar-left {
@@ -57,7 +58,7 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url('https://cdn.wallpapersafari.com/16/16/UwWslj.jpg');
+  background-image: url('https://wallpapercave.com/wp/wp9071402.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
@@ -179,7 +180,7 @@ body {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  background: url('down-arrow.png') no-repeat right center;
+  background: url('newback.jfif') no-repeat right center;
   background-size: 20px;
 }
 
@@ -234,5 +235,8 @@ body {
   right: 15px;
   font-size: 30px;
   color: #fff;
+  cursor: pointer;
+}  
+#toggleImage {
   cursor: pointer;
 }

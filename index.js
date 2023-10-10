@@ -2,32 +2,81 @@
 var products =
     [{
         "id": 1,
-        "name": "GSW Jersey",
+        "name": "Air jordan 1 low",
         "price": 90,
-        "size": ["s", "m", "l", "xl"],
-        "image": "jersey1.jfif",
+        "size": ["36", "37", "38", "39"],
+        "image": "air.jfif",
     },
     {
         "id": 2,
-        "name": "Pheonix Jersey",
-        "price": 93,
-        "size": ["s", "m", "l", "xl"],
-        "image": "jersey2.jfif",
+        "name": "Air Jordan 1 Low",
+        "price": 129,
+        "size": ["37", "38", "39", "40"],
+        "image": "airblack.jfif",
     },
     {
         "id": 3,
-        "name": "MIAMI HEAT Jersey",
-        "price": 95,
-        "size": ["s", "m", "l", "xl"],
-        "image": "jersey3.jfif",
+        "name": "Air Jordan 1 High MM ",
+        "price": 159,
+        "size": ["38", "39", "40", "41"],
+        "image": "nikewhite.jfif",
     },
     {
         "id": 4,
-        "name": "ATLANTA HAWKS Shorts",
-        "price": 70,
-        "size": ["s", "m", "l", "xl"],
-        "image": "shorts.jfif",
-    }
+        "name": "Air Jordan 7 Retro BBS ",
+        "price": 199,
+        "size": ["38", "39", "40", "41"],
+        "image": "nikerose.jfif",
+    },
+    {
+        "id":5,
+        "name":"air force 1",
+        "price":120,
+        "size":["39","40","41","42"    ],
+        "image":"airforce.jfif"
+    }, 
+    {
+        "id":6,
+        "name":"Nike Air Dunk Jumbo ",
+        "price":129,
+        "size":["39","38","40","41"],
+        "image":"nikedunk.jfif"
+    },
+    {
+        "id":7,
+        "name":"Nike Blazer Low '77 Jumbo",
+        "price":99,
+        "size":["38","39","40","41"],
+        "image":"blazer.jfif"
+
+    }, 
+    { 
+        "id":8,
+        "name":"Paris Saint-Germain Jumpman MVP ",
+        "price":167,
+        "size":["36","37","38","39"],
+        "image":"jumpman.jfif"
+
+    }, 
+    { 
+        "id":9,
+        "name":"Nike Dunk Low Unlocked By You ",
+        "price":159,
+        "size":["38","39","40","41"],
+        "image":"byyou.jfif"
+
+    }, 
+    {
+        "id":10,
+        "name":"Air Jordan 1 Mid SE ",
+        "price":114,
+        "size":["38","39","40","41"],
+        "image":"nikemaron.jfif"
+    }, 
+    
+
+
+
     ]
     ;
 
@@ -103,4 +152,16 @@ $(document).ready(function () {
 
     showZoomedImage();
     closeZoomedImage();
+}); 
+const image = document.getElementById('toggleImage');
+let isImage1 = true;
+
+image.addEventListener('click', function () {
+    if (isImage1) {
+        image.src = 'nikerose2.jfif';
+    } else {
+        image.src = 'nikerose.jefif';
+    }
+    isImage1 = !isImage1;
 });
+
